@@ -3,88 +3,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Udhar Book - Track Loans & Debts Easily</title>
+    <title>Udhar Book - Track Your Loans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .stat-card {
+            transition: transform 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+        .feature-card:hover {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
 </head>
-    <body>
-<p><strong>In Short:</strong> We process your information to provide, improve, and manage our Services, communicate with you, ensure security and prevent fraud, and comply with the law.</p>
+<body class="text-gray-800">
+    <main>
+        <!-- Hero Section -->
+        <section class="gradient-bg text-white py-12 md:py-20 px-4">
+            <div class="container mx-auto max-w-6xl">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-1/2 mb-10 md:mb-0">
+                        <div class="inline-flex items-center px-4 py-2 rounded-full bg-white bg-opacity-20 mb-6">
+                            <span class="text-sm font-medium">No More Debt Confusion</span>
+                        </div>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                            Udhar Book
+                            <span class="block text-blue-100">Track & Manage Loans</span>
+                        </h1>
+                        <p class="text-xl mb-8 text-blue-100 max-w-2xl">
+                            A modern solution to track all your loans, debts, and payments in one place. Never forget who owes you or who you owe.
+                        </p>
+                        <div class="flex space-x-4">
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                                <i class="fas fa-shield-alt text-2xl mb-2"></i>
+                                <p class="font-bold">Secure</p>
+                                <p class="text-sm">Your data is protected</p>
+                            </div>
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                                <i class="fas fa-sync-alt text-2xl mb-2"></i>
+                                <p class="font-bold">Sync</p>
+                                <p class="text-sm">Across all devices</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <div class="relative">
+                            <div class="absolute -top-6 -left-6 w-64 h-64 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+                            <div class="absolute -bottom-6 -right-6 w-64 h-64 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+                            <div class="relative bg-white text-gray-800 p-8 rounded-2xl shadow-2xl max-w-md">
+                                <div class="flex justify-between items-center mb-6">
+                                    <h3 class="text-2xl font-bold text-gray-900">Udhar Book</h3>
+                                    <i class="fas fa-book text-3xl text-purple-600"></i>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <div>
+                                            <p class="font-semibold">You owe</p>
+                                            <p class="text-sm text-gray-500">To friends & family</p>
+                                        </div>
+                                        <p class="text-2xl font-bold text-red-600">₹12,450</p>
+                                    </div>
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <div>
+                                            <p class="font-semibold">You are owed</p>
+                                            <p class="text-sm text-gray-500">From friends & family</p>
+                                        </div>
+                                        <p class="text-2xl font-bold text-green-600">₹8,750</p>
+                                    </div>
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <div>
+                                            <p class="font-semibold">Net Balance</p>
+                                            <p class="text-sm text-gray-500">This month</p>
+                                        </div>
+                                        <p class="text-2xl font-bold text-purple-600">-₹3,700</p>
+                                    </div>
+                                </div>
+                                <div class="mt-8 pt-6 border-t border-gray-200">
+                                    <p class="text-center text-gray-600">
+                                        <i class="fas fa-lock mr-2"></i>
+                                        All your loan data is private and secure
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <p>
-        We process your personal information for different reasons based on how you interact with our Services.
-    </p>
+        <!-- Stats Section -->
+        <section class="py-16 px-4">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Why Choose Udhar Book?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="stat-card bg-white p-8 rounded-xl shadow-lg">
+                        <div class="text-purple-600 mb-4">
+                            <i class="fas fa-chart-line text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Track Everything</h3>
+                        <p class="text-gray-600">
+                            Keep track of all loans, debts, and payments in one place. Get clear insights into your financial relationships.
+                        </p>
+                        <div class="mt-6">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Track who owes you money</span>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Track who you owe money to</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Set payment reminders</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card bg-white p-8 rounded-xl shadow-lg">
+                        <div class="text-purple-600 mb-4">
+                            <i class="fas fa-bell text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Smart Reminders</h3>
+                        <p class="text-gray-600">
+                            Never miss a payment deadline again. Udhar Book sends you timely reminders for upcoming payments.
+                        </p>
+                        <div class="mt-6">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Custom reminder settings</span>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Multiple notification methods</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Grace period alerts</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card bg-white p-8 rounded-xl shadow-lg">
+                        <div class="text-purple-600 mb-4">
+                            <i class="fas fa-chart-pie text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Visual Reports</h3>
+                        <p class="text-gray-600">
+                            Get visual insights into your loan patterns with easy-to-understand charts and graphs.
+                        </p>
+                        <div class="mt-6">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Monthly loan summaries</span>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Person-wise debt breakdown</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Yearly financial overview</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <h2>3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h2>
+        <!-- Features Section -->
+        <section class="py-16 px-4 bg-gray-50">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Modern Loan Tracking Features</h2>
+                <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                    Udhar Book provides all the tools you need to manage your personal loans and debts efficiently.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="feature-card bg-white p-8 rounded-xl">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-user-friends text-2xl text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Multiple People Tracking</h3>
+                                <p class="text-gray-600">
+                                    Track loans with multiple people simultaneously. Keep separate records for family, friends, and colleagues.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card bg-white p-8 rounded-xl">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-file-invoice-dollar text-2xl text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Detailed Records</h3>
+                                <p class="text-gray-600">
+                                    Maintain detailed records including loan amount, interest, payment dates, and notes for each transaction.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="feature-card bg-white p-8 rounded-xl">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-mobile-alt text-2xl text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Mobile Friendly</h3>
+                                <p class="text-gray-600">
+                                    Access your Udhar Book from any device. The interface is optimized for mobile, tablet, and desktop.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card bg-white p-8 rounded-xl">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-cloud text-2xl text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Cloud Backup</h3>
+                                <p class="text-gray-600">
+                                    Your data is securely backed up in the cloud. Never lose your loan records even if you change devices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <p><strong>In Short:</strong> We may share information in specific situations described in this section.</p>
+        <!-- Testimonial Section -->
+        <section class="py-16 px-4">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What Users Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Rajesh Sharma</h4>
+                                <p class="text-gray-500 text-sm">Small Business Owner</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "Udhar Book has simplified my life. I used to forget who owed me money, but now I track everything effortlessly."
+                        </p>
+                        <div class="mt-4 text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Priya Patel</h4>
+                                <p class="text-gray-500 text-sm">College Student</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "As a student, I often lend small amounts to friends. Udhar Book helps me keep track without awkward conversations."
+                        </p>
+                        <div class="mt-4 text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Amit Kumar</h4>
+                                <p class="text-gray-500 text-sm">Freelancer</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "The reminder feature is a game-changer. I no longer have to remember payment dates manually."
+                        </p>
+                        <div class="mt-4 text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <ul>
-        <li><strong>Business Transfers.</strong> We may share or transfer your information as part of negotiations for any merger, sale of company assets, financing, or acquisition of all or part of our business.</li>
-    </ul>
+        <!-- Final CTA Section (without buttons as requested) -->
+        <section class="py-16 px-4 gradient-bg text-white">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Start Tracking Your Loans Today</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    Udhar Book helps you maintain healthy financial relationships by keeping all loan records organized and accessible.
+                </p>
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl max-w-2xl mx-auto">
+                    <div class="flex flex-col md:flex-row items-center justify-between">
+                        <div class="text-left mb-6 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-2">Your Financial Clarity Awaits</h3>
+                            <p class="text-blue-100">No downloads, no installations, no commitments.</p>
+                        </div>
+                        <div class="text-4xl">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-white border-opacity-20">
+                        <p class="text-lg">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            Simply open Udhar Book in your browser and start tracking immediately.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <h2>4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</h2>
-
-    <p><strong>In Short:</strong> We may use cookies and other tracking technologies to collect and store your information.</p>
-
-    <p>
-        We may use cookies and similar tracking technologies to gather information when you interact with our Services.
-    </p>
-
-    <p>
-        Details about how we use these technologies and how you can refuse certain cookies are in our Cookie Notice.
-    </p>
-
-    <h2>5. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
-
-    <p><strong>In Short:</strong> We keep your information as long as necessary to meet the purposes outlined in this Privacy Notice.</p>
-
-    <h2>6. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
-
-    <p>
-        We have established reasonable technical and organizational security measures.
-        However, no system is completely secure.
-    </p>
-
-    <h2>7. DO WE COLLECT INFORMATION FROM MINORS?</h2>
-
-    <p>
-        We do not knowingly collect data from children under 18 years of age.
-    </p>
-
-    <h2>8. WHAT ARE YOUR PRIVACY RIGHTS?</h2>
-
-    <p>
-        You may review, change, or close your account at any time, depending on where you live.
-    </p>
-
-    <h2>9. CONTROLS FOR DO-NOT-TRACK FEATURES</h2>
-
-    <p>
-        Currently, there is no standard technology for recognizing Do-Not-Track signals.
-    </p>
-
-    <h2>10. DO WE MAKE UPDATES TO THIS NOTICE?</h2>
-
-    <p>
-        Yes, we will update this notice as needed to comply with relevant laws.
-    </p>
-
-    <h2>11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
-
-    <div class="contact">
-        <p>MONDAVUS TRADE PRIVATE LIMITED</p>
-        <p>FL A 402 EKLAVYA BUI & DEV PL 69D 69J 69K SEC-21 KHARGHAR</p>
-        <p>RAIGAR H</p>
-        <p>Raigad, Maharashtra 410210</p>
-        <p>India</p>
-    </div>
-
-    <h2>12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h2>
-
-    <p>
-        Depending on the laws in your country, you may have the right to access, correct,
-        or delete your personal information by submitting a data subject access request.
-    </p>
-
-</div>
-
+    <!-- Note: No footer or navbar included as requested -->
 </body>
 </html>
